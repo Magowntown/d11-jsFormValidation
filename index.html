@@ -32,41 +32,20 @@
                     <span id="emailError" class="text-red-500"></span>
                 </div>
 
-                <div class="flex flex-col">
+                <div id="passBox" class="flex flex-col">
                     <label class="py-2 for="password">Password</label>
-                    <input type="password" id="psw" class="border-l-4 border-blue-400" onfocus="verifyPassword()" onblur="verifyPassword()" onkeyup="verifyPassword();" name="password" placeholder="Enter your password">
-                    <span id="passwordError" class="text-red-500"></span>
+                    <input type="password" id="psw" class="border-l-4 border-blue-400" onfocus="pswVerification()" onblur="pswVerification()" onkeyup="pswVerification();" name="password" placeholder="Enter your password">
+                    <span id="pswErrorBlank" class="text-red-500"></span>
+                    <span id="pswErrLength" class="text-red-500"></span>
+                    <span id="pswErrNum" class="text-red-500"></span>
+                    <span id="pswErrUpCase" class="text-red-500"></span>
+                    <span id="pswErrLowCase" class="text-red-500"></span>
+
                 </div>
 
                 <div class="py-4">
                     <button id="submit" class="bg-blue-400 text-white px-4 py-2 rounded-md">Submit</button>
                 </div>
-
-                <!-- <div class="flex flex-col border-b-4 border-blue-400">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
-                    <span id="confirmPasswordError" class="text-red-500"></span>
-                </div> -->
-
-                <!-- <div class="flex flex-col border-b-4 border-blue-400">
-                    <label for="phone">Phone</label>
-                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
-                    <span id="phoneError" class="text-red-500"></span>
-                </div>
-
-                <div class="flex flex-col border-b-4 border-blue-400">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Enter your address">
-                    <span id="addressError" class="text-red-500"></span>
-                </div>
-
-                <div class="flex flex-col border-b-4 border-blue-400">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city" placeholder="Enter your city">
-                    <span id="cityError" class="text-red-500"></span>
-                </div> -->
-
-
             </form>
         </div>
     </body>
