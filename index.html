@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Form Validation</title>
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Font Awesome CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <script src="./index.js"></script>
+    </head>
+
+    <body class="flex flex-col items-center">
+        <div id="title" class="py-5">
+            <h1>Form Validation</h1>
+        </div>
+        <div id="container" class="border border-black w-80 py-10">
+            <form class="flex flex-col jusitfy-evenly items-center space-y-3">
+                <div class="flex flex-col">
+                    <label class="py-2" for="name">Name</label>
+                    <input type="text" id="name" class="border-l-4 border-blue-400" name="name" placeholder="Enter your name">
+                    <span id="nameError" class="text-red-500"></span>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="py-2 for="email">Email</label>
+                    <input type="text" id="email" class="border-l-4 border-blue-400" name="email" placeholder="Enter your email">
+                    <span id="emailError" class="text-red-500"></span>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="py-2 for="password">Password</label>
+                    <input type="password" id="psw" class="border-l-4 border-blue-400" onfocus="verifyPassword()" onblur="verifyPassword()" onkeyup="verifyPassword();" name="password" placeholder="Enter your password">
+                    <span id="passwordError" class="text-red-500"></span>
+                </div>
+
+                <div class="py-4">
+                    <button id="submit" class="bg-blue-400 text-white px-4 py-2 rounded-md">Submit</button>
+                </div>
+
+                <!-- <div class="flex flex-col border-b-4 border-blue-400">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                    <span id="confirmPasswordError" class="text-red-500"></span>
+                </div> -->
+
+                <!-- <div class="flex flex-col border-b-4 border-blue-400">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                    <span id="phoneError" class="text-red-500"></span>
+                </div>
+
+                <div class="flex flex-col border-b-4 border-blue-400">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address">
+                    <span id="addressError" class="text-red-500"></span>
+                </div>
+
+                <div class="flex flex-col border-b-4 border-blue-400">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city">
+                    <span id="cityError" class="text-red-500"></span>
+                </div> -->
+
+
+            </form>
+        </div>
+    </body>
+</html>
