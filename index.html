@@ -18,33 +18,42 @@
         <div id="title" class="py-5">
             <h1>Form Validation</h1>
         </div>
-        <div id="container" class="border border-black w-80 py-10">
-            <form class="flex flex-col jusitfy-evenly items-center space-y-3">
+        <div id="container" class="border border-black w-80 py-10 shadow-lg">
+            <form class="flex flex-col space-y-3 mt-0 mb-0 ml-5 mr-5">
                 <div class="flex flex-col">
                     <label class="py-2" for="name">Name</label>
-                    <input type="text" id="name" class="border-l-4 border-blue-400" name="name" placeholder="Enter your name">
+                    <input type="text" id="name" class=" rounded border-l-4 border-r border-t border-b
+                        border-blue-400 shadow-lg" name="name" placeholder="Enter your name">
                     <span id="nameError" class="text-red-500"></span>
                 </div>
 
                 <div class="flex flex-col">
                     <label class="py-2 for="email">Email</label>
-                    <input type="text" id="email" class="border-l-4 border-blue-400" name="email" placeholder="Enter your email">
+                    <input type="text" id="email" class="rounded border-l-4 border-r border-t border-b
+                        border-blue-400 shadow-lg" name="email" placeholder="Enter your email">
                     <span id="emailError" class="text-red-500"></span>
                 </div>
 
-                <div id="passBox" class="flex flex-col">
-                    <label class="py-2 for="password">Password</label>
-                    <input type="password" id="psw" class="border-l-4 border-blue-400" onfocus="pswVerification()" onblur="pswVerification()" onkeyup="pswVerification();" name="password" placeholder="Enter your password">
-                    <span id="pswErrorBlank" class="text-red-500"></span>
-                    <span id="pswErrLength" class="text-red-500"></span>
-                    <span id="pswErrNum" class="text-red-500"></span>
-                    <span id="pswErrUpCase" class="text-red-500"></span>
-                    <span id="pswErrLowCase" class="text-red-500"></span>
+                <div id="passBox" class="flex flex-col justify-center">
+                    <label class="py-2" for="password">Password</label>
+                    <input type="password" id="psw" class="flex box-border
+                    rounded border-l-4 border-r border-t border-b border-blue-400 shadow-lg"
+                        onfocus="pswVerification()" onblur="pswVerification()"
+                        onkeyup="pswVerification();" name="password"
+                        placeholder="Enter your password">
+                    <div class="flex flex-col justify-center text-sm">
+                        <span id="pswErrorBlank" class="text-red-500"></span>
+                        <span id="pswErrLength" class="text-red-500"></span>
+                        <span id="pswErrNum" class="text-red-500"></span>
+                        <span id="pswErrUpCase" class="text-red-500"></span>
+                        <span id="pswErrLowCase" class="text-red-500"></span>
+                    </div>
 
                 </div>
 
                 <div class="py-4">
-                    <button id="submit" class="bg-blue-400 text-white px-4 py-2 rounded-md">Submit</button>
+                    <button id="submit" class="bg-blue-400 text-white px-4 py-2
+                        rounded-md">Submit</button>
                 </div>
             </form>
         </div>
